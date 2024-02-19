@@ -25,7 +25,6 @@ jobs:
       - name: SonarQube Scan
         run: sonar-scanner -X
           -Dsonar.scm.disabled=True
-          -Dsonar.host.url=https://sonarcloud.io
           -Dsonar.login=c7c8ada82c9d94dccd1cbe0903fcc20bb5d8ad6f
           -Dsonar.organization=knixer
           -Dsonar.projectKey=javaproject
