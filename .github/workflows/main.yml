@@ -24,6 +24,7 @@ jobs:
 
      - name: SonarQube Scan
        run: sonar-scanner -X
+         -Dsonar.scm.disabled=True
          -Dsonar.host.url=${{ secrets.SONAR_URL }}
          -Dsonar.login=${{ secrets.SONAR_TOKEN }}
          -Dsonar.organization=${{ secrets.SONAR_ORGANIZATION }}
