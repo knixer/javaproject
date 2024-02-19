@@ -22,6 +22,8 @@ public class DatabaseApplication implements CommandLineRunner {
 
 	public void run(final String... args){
 		//log.info("Datasource: " + dataSource.toString());
+		System.out.println("HEH");
+		System.out.println("HEH");
 		final JdbcTemplate restTemplate = new JdbcTemplate(dataSource);
 		restTemplate.execute("select 1");
 	}
