@@ -22,6 +22,9 @@ jobs:
      - name: Setup SonarQube
        uses: warchant/setup-sonar-scanner@v7
 
+     - name: Sonar information
+       run: echo organization $SONAR_ORGANIZATION and $SONAR_PROJECT_KEY
+
      - name: SonarQube Scan
        run: sonar-scanner -X
          -Dsonar.scm.disabled=True
