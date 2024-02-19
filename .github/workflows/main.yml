@@ -5,7 +5,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
      - name: Fetch Source code
-       run: echo "Workflow test runs"
        uses: actions/checkout@v4
 
      - name: Maven test
